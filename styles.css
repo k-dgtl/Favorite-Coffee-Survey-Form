@@ -1,0 +1,68 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-image: no-repeat;
+  font-family: papyrus, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.form {
+  background-color: #f7e7cee6;
+  margin: auto;
+  padding: 20px;
+  width: 75vw;
+  max-width: 550px;
+  border-radius: 10px;
+}
+
+h1, p {
+  text-align: center;
+  line-height: 0.5;
+}
+
+fieldset {
+  margin:0.5em auto;
+  border: 5px double #59372b;
+  border-radius: 10px;
+}
+
+legend {
+  text-align: center;
+  background-color: #cca98de6;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.info, .roast, .temp {
+  padding: 10px;
+}
+
+ .boxes {
+   display: grid;
+   grid-template-columns: repeat(3,150px);
+   grid-template-rows: repeat(6, 20px);
+   grid-gap: 10px;
+   padding: 10px;
+ }
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1rem;
+  min-width: 100px; 
+  background-color: #59372b;
+  border-color: #59372b;
+  Color: #f7e7ce;
+  border-radius: 10px;
+  }
