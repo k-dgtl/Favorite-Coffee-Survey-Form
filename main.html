@@ -1,0 +1,78 @@
+<!--- Responsive Web Design Projects - Build a Survey Form by freeCodeCamp --->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorite Coffee Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="form">
+    <form id="survey-form" action="submit">
+    
+    <h1 id="title">Favorite Coffee Survey</h1>
+    <p id="description">Let the world know about your favorite type of coffee!</p>
+    <p>Please fill out the survey below in its entirety.</p>
+
+    <fieldset>
+      <legend>First, lets get to know you</legend>
+      <label class="info" id="name-label" for="name">Enter your name: <input id="name" type="text" placeholder="First & Last Name" required/></label><br>
+      <label class="info" id="email-label" for="email">Enter your email: <input id="email" type="email" placeholder="ilovecoffee@beans" required/></label><br>
+      <label class="info" id="number-label" for="number">Input your age (years): <input id="number" type="number" min="10" max="100" placeholder="25"/></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Now, lets talk coffee!</legend>
+        <label class="roast" for="dropdown">Your choice of coffee roast? 
+          <select id="dropdown">
+            <option disabled selected value>(select one)</option>
+            <option value="light roast">Light Roast</option>
+            <option value="mediumrRoast">Medium Roast</option>
+            <option value="medium-dark roast">Medium-Dark Roast</option>
+            <option value="dark roast">Dark Roast</option>
+          </select></label>
+
+          <legend>Do you prefer hot or iced?</legend>
+              <label class="temp" for="hot"><input id="hot" type="radio" value="hot" name="hot-iced" checked/> Hot</label>
+              <label class="temp" for="iced"><input id="iced" type="radio" value="iced" name="hot-iced"/> Iced</label>
+    
+      <div class="drinks">
+       <legend>What's your top 3 favorite coffee drinks?</legend>
+        <div class="boxes">
+          <label for="espresso"><input type="checkbox" id="espresso" value="Espresso" checked/> Espresso</label>
+          <label for="red eye"><input type="checkbox" id="red eye" value="red eye"/> Red Eye</label>
+          <label for="black eye"><input type="checkbox" id="black eye" value="black eye"/> Black Eye</label>
+          <label for="americano"><input type="checkbox" id="americano" value="americano"/> Americano</label>
+          <label for="long black"><input type="checkbox" id="long black" value="long black"/> Long Black</label>
+          <label for="macchiato"><input type="checkbox" id="macchiato" value="macchiato"/> Macchiato</label>
+          <label for="cortado"><input type="checkbox" id="cortado" value="cortado"/> Cortado</label>
+          <label for="breve"><input type="checkbox" id="breve" value="breve"/> Breve</label>
+          <label for="cappuccino"><input type="checkbox" id="cappuccino" value="cappuccino"/> Cappuccino</label>
+          <label for="flat white"><input type="checkbox" id="flat white" value="flat white"/> Flat White</label>
+          <label for="cafe latte"><input type="checkbox" id="cafe latte" value="cafe latte"/> Cafe Latte</label>
+          <label for="frappuccino"><input type="checkbox" id="frappuccino" value="frappuccino"/> Frappuccino</label>
+          <label for="vienna"><input type="checkbox" id="vienna" value="vienna"/> Vienna</label>
+          <label for="affogato"><input type="checkbox" id="affogato" value="affogato"/> Affogato</label>
+          <label for="cafe au lait"><input type="checkbox" id="cafe au lait" value="cafe au lait"/> Cafe au Lait</label>
+          <label for="drip coffee"><input type="checkbox" id="drip coffee" value="drip coffee"/> Drip Coffee</label>
+          <label for="french press"><input type="checkbox" id="french press" value="french press"/> French Press</label>
+          <label for="cold brew"><input type="checkbox" id="cold brew" value="cold brew"/> Cold Brew</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+         <legend>Comments</legend> 
+          <textarea id="comments" name="comments" rows="6" cols="60" placeholder="What do you like to add to your coffee? Describe your perfect drink of choice!"></textarea>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit"/>
+    
+    </div>
+  </body>
+
+</html>
